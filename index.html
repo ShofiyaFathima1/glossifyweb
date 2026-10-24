@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glossify - Luxury Meets Glossi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fff5f7;
+      margin: 0;
+      padding: 0;
+      color: #4d3c3c;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #ffeef3;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 2px solid #e1cbe2;
+      transition: transform 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(15deg);
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    h2:hover, h3:hover {
+      color: #a84fa3;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    .slogan {
+      font-style: italic;
+      color: #9c6ca2;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    section {
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .product {
+      background: #fff0f6;
+      border: 1px solid #f0d0e6;
+      padding: 1rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      box-shadow: 0 0 10px transparent;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      transition: transform 0.4s ease;
+    }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(168, 79, 163, 0.3);
+    }
+    .product:hover img {
+      transform: scale(1.05);
+    }
+    .toggle-section {
+      max-width: 800px;
+      margin: 3rem auto;
+    }
+    .toggle-item {
+      background: #f9e4f7;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease;
+    }
+    .toggle-item:hover {
+      box-shadow: 0 8px 16px rgba(168, 79, 163, 0.3);
+    }
+    .toggle-header {
+      cursor: pointer;
+      padding: 1rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #6f3d7d;
+      user-select: none;
+    }
+    .toggle-content {
+      display: none;
+      padding: 1rem;
+      border-top: 1px solid #d8a7d8;
+      background: #fff7fb;
+      animation: slideDown 0.4s ease forwards;
+    }
+    footer {
+      background: #f4dbf7;
+      text-align: center;
+      padding: 2rem;
+      color: #4a2f4a;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; max-height: 0; }
+      to { opacity: 1; max-height: 500px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="Samira (1).png" alt="Glossify Logo" class="logo" />
+      <div>
+        <h1>Glossify</h1>
+        <p class="slogan">Beauty crafted with love and science.</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Glossify</h2>
+    <p>
+      At Glossify, we believe beauty is more than skin deep — it’s a feeling of elegance, confidence, and glow that comes from within. Born from a passion for skincare and self-love, Glossify is your modern royal beauty ritual.
+
+Our products are crafted with a blend of luxurious natural ingredients and clean science, designed to nourish your skin and elevate your daily routine. From radiant serums to velvety night creams, every Glossify creation is a celebration of timeless beauty.
+
+We’re proudly cruelty-free, eco-conscious, and made with love — because true beauty never compromises.
+
+Every bottle, jar, and drop of Glossify is thoughtfully created to bring out the best version of you. We understand that skincare is a personal journey, and our mission is to support you at every step with formulations that respect both your skin and the planet. Whether you’re starting your day or winding down at night, Glossify transforms your ritual into a moment of self-care and indulgence.
+
+Join us as we embrace the harmony of nature and innovation, crafting products that not only enhance your outer radiance but also inspire confidence and joy within. With Glossify, your skin’s story becomes a testament to beauty that shines from the inside out.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="glow serum.jpg" alt="GlowFix Serum" />
+        <h3>GlowFix Serum</h3>
+        <p>Brightens dull skin and restores youthful radiance.</p>
+        <p>Packed with vitamins and antioxidants.</p>
+        <p>Gives an instant glow with long-lasting hydration.</p>
+      </div>
+      <div class="product">
+        <img src="toner.jpg" alt="CloudMist Toner" />
+        <h3>CloudMist Toner</h3>
+        <p>A refreshing mist that balances and soothes.</p>
+        <p>Infused with floral water and natural minerals.</p>
+        <p>Leaves skin soft, dewy, and prepped for skincare.</p>
+      </div>
+      <div class="product">
+        <img src="suncream.jpg" alt="DewyShield SPF 50" />
+        <h3>DewyShield SPF 50</h3>
+        <p>Broad-spectrum sun protection with a silky finish.</p>
+        <p>Hydrates without clogging pores or leaving residue.</p>
+        <p>Perfect for daily wear, indoors or out.</p>
+      </div>
+      <div class="product">
+        <img src="night cream.jpg" alt="Velvet Night Cream" />
+        <h3>Velvet Night Cream</h3>
+        <p>Deeply nourishes and repairs skin overnight.</p>
+        <p>Blended with peptides and botanical extracts.</p>
+        <p>Wake up to smooth, plump, velvety skin.</p>
+      </div>
+      <div class="product">
+        <img src="mask.jpg" alt="ClayPurify Mask" />
+        <h3>ClayPurify Mask</h3>
+        <p>Draws out impurities and tightens pores.</p>
+        <p>Made with mineral-rich clays and calming herbs.</p>
+        <p>Reveals a clearer, refreshed, radiant complexion.</p>
+      </div>
+      <div class="product">
+       <img src="eyecream.jpg" alt="Luminous Eye Cream" />
+       <h3>Luminous Eye Cream</h3>
+       <p>Brightens and hydrates delicate under-eye skin.</p>
+       <p>Reduces puffiness and fine lines with natural botanicals.</p>
+       <p>Gentle formula that refreshes your look instantly.</p>
+     </div>
+
+    </div>
+  </section>
+
+  <section id="subtopics" class="toggle-section">
+    <h2>More About Glossify</h2>
+
+    <div class="toggle-item">
+      <div class="toggle-header">
+        Bringing Glossify to You
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="toggle-content">
+       Glossify delivers your favorite products right to your door, fast and safely.
+       Enjoy luxury skincare without stepping out.
+       Because your glow deserves royal treatment at home.
+       With carefully packed shipments, we ensure your products arrive fresh and perfect every time.
+       Experience convenience wrapped in elegance — skincare that comes to you.
+
+
+      </div>
+    </div>
+
+    <div class="toggle-item">
+      <div class="toggle-header">
+        Where Elegance Meets Skincare
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="toggle-content">
+        Glossify combines natural ingredients with modern science.
+        Each product turns your routine into a luxurious ritual.
+        Feel confident, radiant, and truly elegant every day.
+        Our innovative formulas are designed to enhance your skin’s natural beauty while respecting its delicate balance.
+        Indulge in skincare that blends tradition with breakthrough technology.
+      </div>
+    </div>
+
+    <div class="toggle-item">
+      <div class="toggle-header">
+        Share Your Shine
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="toggle-content">
+        Join the Glossify community and share your beauty journey.
+        Your stories inspire us and others to glow with pride.
+        Together, we celebrate confidence and radiant skin.
+        Connect with fellow skincare lovers and discover tips, tricks, and honest reviews.
+        Your voice matters — help us shape the future of beauty
+      </div>
+    </div>
+
+    <div class="toggle-item">
+      <div class="toggle-header">
+        Stay Connected with Glossify
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="toggle-content">
+        Get the latest offers, tips, and inspiration from Glossify.
+        Follow us and stay part of our beauty family.
+        Because glowing together is better.
+        Be the first to know about new launches, exclusive events, and skincare advice from experts.
+        Stay inspired, empowered, and glowing every single day.
+      </div>
+    </div>
+    <div class="toggle-item">
+  <div class="toggle-header">
+    Contact Details
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <div class="toggle-content">
+    <p><strong>Email:</strong> support@glossify.com</p>
+    <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+    <p><strong>Address:</strong> 123 Glow Street, Radiance City, Beautyland</p>
+    <p><strong>Follow Us:</strong></p>
+    <p>
+      <a href="#" target="_blank">Facebook:Glossify_sinkcares</a> | 
+      <a href="#" target="_blank">Instagram:Glossify_skincares</a> 
+    </p>
+  </div>
+</div>
+  </section>
+
+  <footer>
+    Royal Delivery, Right to You<br />
+    Your Glossify glow-up is just a click away! We offer doorstep delivery, packed with care and a touch of luxury. Because beauty should always come with comfort.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleHeaders = document.querySelectorAll('.toggle-header');
+      toggleHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const content = header.nextElementSibling;
+          const icon = header.querySelector('i');
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+          } else {
+            document.querySelectorAll('.toggle-content').forEach(c => c.style.display = 'none');
+            document.querySelectorAll('.toggle-header i').forEach(i => i.classList.replace('fa-chevron-up', 'fa-chevron-down'));
+            content.style.display = 'block';
+            icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+

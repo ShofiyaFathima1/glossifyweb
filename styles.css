@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff5f7;
+  margin: 0;
+  padding: 0;
+  color: #4d3c3c;
+  scroll-behavior: smooth;
+}
+header {
+  background: #ffeef3;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #e1cbe2;
+}
+.slogan {
+  font-style: italic;
+  color: #9c6ca2;
+}
+section {
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in;
+}
+h2 {
+  color: #b84fa3;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.product {
+  background: #fff0f6;
+  border: 1px solid #f0d0e6;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.toggle-section {
+  max-width: 800px;
+  margin: auto;
+}
+.toggle-item {
+  background: #f9e4f7;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+.toggle-header {
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6f3d7d;
+}
+.toggle-content {
+  display: none;
+  padding: 1rem;
+  border-top: 1px solid #d8a7d8;
+  background: #fff7fb;
+}
+footer {
+  background: #f4dbf7;
+  text-align: center;
+  padding: 2rem;
+  color: #4a2f4a;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
